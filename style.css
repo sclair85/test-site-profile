@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    width:1100px;
+    margin: auto;
+}
+
+.outside-border{
+    border: 2px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, .1);
+    height: 700px;
+    margin:-4px;
+    margin-right:-10px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px;
+
+    background-color: hsl(196,18%,41%);
+}
+
+nav li{
+    position: relative;
+    right: 10px;
+    display: inline;
+    margin: 12px;
+}
+
+nav a{
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+nav a:hover,
+nav a:focus{
+    background-color: rgba(255, 255, 255, .1);
+    color:white;
+}
+
+.fa{
+    padding: 2px;
+    font-size: 25px;
+}
+
+
+.box{
+    position: relative;
+    top: 12px;
+    left: 325px;
+    border: 2px solid hsl(92,78%,31%);
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+    background-color: hsl(80,33%,88%);
+}
+
+.box-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-direction: column;
+}   
+
+p{
+    color: hsl(92,78%,31%);
+    font-size: 40px;
+    font-weight: 545;
+}
+
+.hi{
+    margin: 20px;
+}
+
+img{
+    margin: 70px;
+    width: 25%;
+}
+
+aside{
+    position: relative;
+    bottom: 550px;
+}
+
+.sidebar{
+    border-right : 2px solid rgba(0, 0, 0, .1);
+    height: 420px;
+    width: 200px;
+    margin: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-sidebar,
+.bottom-sidebar{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.top-sidebar a:hover,
+.bottom-sidebar a:hover,
+.top-sidebar a:focus,
+.bottom-sidebar a:focus{
+    background-color: rgba(129, 129, 137, 0.1);
+}
+
+.top-sidebar a,
+.bottom-sidebar a{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:hsl(196,73%,59%);
+}
